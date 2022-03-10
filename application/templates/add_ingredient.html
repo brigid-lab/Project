@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Add a new ingredient:</h1>
+        <p>
+            <div class='form'>
+                <form method='POST' action=''>
+                    <!-- hidden_tag() is required for form validation -->
+                    {{ form.hidden_tag() }}
+                    <!-- Each field displays its label followed by the input field itself -->
+                   
+                    <br>
+                    {{ form.ingredient_name.label }} {{ form.ingredient_name }}
+                    {{ form.recipe_id.label}}{{ form.recipe_id }}
+                    
+                    <br>
+                    <!-- form.submit is a button -->
+                    {{ form.submit }}
+                    <br>
+                </form>
+            </div>
+        </p>
+    </body>
+</html>

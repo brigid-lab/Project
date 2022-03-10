@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+{%block body_content%}
+        <h1>Read a recipe:</h1>
+        <p>
+           
+                    {% for recipe in all_recipes%}
+                    {{ recipe.recipe_name}}
+                    {{ recipe.description}}
+                    {{ recipe.instructions}}
+                    <form action=" {{url_for('ingredients', recipe_id=recipe.id)}}" method='GET'> 
+                    <input type = submit value="ingredients">
+                    </form>
+                    <form action=" {{url_for('add_ingredient', recipe_id=recipe.id)}}" method='GET'> 
+                        <input type = submit value="add ingredients">
+                    </form>
+                    {%endfor%}
+                    
+                    <br>
+                
+            </div>
+        </p>
+        {%endblock body_content%}
+    </body>
+</html>
