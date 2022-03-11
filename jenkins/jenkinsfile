@@ -22,7 +22,7 @@ pipeline{
             steps{
                 script{
                     if(env.CREATE_SCHEMA == "true") {
-                        sh 'echo "Creating Schema ..." '
+                        sh 'echo "Creating Schema Now ..." '
                         sh "python3 create.py"
                         sh 'echo "Schema created!"'
                     }
