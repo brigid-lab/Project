@@ -1,4 +1,4 @@
-from application.models import Recipes, Ingredients, Register
+from application.models import Recipes, Ingredients
 from flask import url_for
 from flask_testing import TestCase
 
