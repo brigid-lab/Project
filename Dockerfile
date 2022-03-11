@@ -5,7 +5,7 @@ WORKDIR /Project
 #copy directory contents including requirements.txt
 COPY . .
 
-RUN pip3 install -r requirements. 
+RUN pip3 install -r requirements.txt 
 
 EXPOSE 5000
 
