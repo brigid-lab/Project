@@ -1,4 +1,4 @@
-from Project.application.routes import register
+from application.routes import register
 from flask import url_for
 from flask_testing import TestCase
 
