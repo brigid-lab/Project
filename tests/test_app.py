@@ -1,4 +1,4 @@
-from application.routes import ingredients, register
+from application import Recipes, Ingredients, Register
 from flask import url_for
 from flask_testing import TestCase
 
@@ -22,8 +22,8 @@ class TestBase(TestCase):
     def setUp(self):
         # Create table
         db.create_all()
-        # Create test registree
-        sample1 = ingredients(ingredient_name="Mud")
+        # Create test ingredients
+        sample1 = Recipes(recipe_name="Mud",description="han", instructions = "cook")
         # save users to database
         db.session.add(sample1)
         db.session.commit()
