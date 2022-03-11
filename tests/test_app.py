@@ -1,4 +1,4 @@
-from application.routes import register
+from application.routes import ingredients, register
 from flask import url_for
 from flask_testing import TestCase
 
@@ -23,7 +23,7 @@ class TestBase(TestCase):
         # Create table
         db.create_all()
         # Create test registree
-        sample1 = register(name="Mud")
+        sample1 = ingredients(ingredient_name="Mud")
         # save users to database
         db.session.add(sample1)
         db.session.commit()
