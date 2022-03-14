@@ -7,5 +7,5 @@ After getting the application performing CRUD functionality, I am pushing it to 
 
 OK, so now Video has been done, its time to review what i've learnt.
 
-So the things I would do differently are: 1) Learn GitHub better and use branches 2) in a production environment use the credentials store in Jenkins
+So the things I would do differently are: 1) Learn GitHub better and use branches 2) In a production environment use the credentials store in Jenkins.
 
